@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Benefits Chart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+        }
+
+        td {
+            background-color: #f9f9f9;
+            font-size: 16px;
+        }
+
+        .food-combinations {
+            background-color: #f2f2f2;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            width: 90%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .combination-title {
+            font-size: 20px;
+            color: #ff6666;
+            margin-bottom: 10px;
+        }
+
+        .food-image {
+            width: 160px; /* Increased image size */
+            height: 160px; /* Increased image size */
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .food-name {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .food-combination-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .food-combination-list li {
+            width: 30%; /* Adjust width to make 3 items per row */
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .header {
+            text-align: center;
+            font-size: 24px;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">Food Benefits and Best Times</div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Food</th>
+                <th>Benefit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="pre-workout">
+                <td><img src="honey.png" alt="Honey" class="food-image"><div class="food-name">Honey</div></td>
+                <td>Pre-Workout</td>
+            </tr>
+            <tr class="detoxifier">
+                <td><img src="lemon-water.png" alt="Lemon Water" class="food-image"><div class="food-name">Lemon Water</div></td>
+                <td>Detoxifier</td>
+            </tr>
+            <tr class="skin-health">
+                <td><img src="aloe-vera.png" alt="Aloe Vera" class="food-image"><div class="food-name">Aloe Vera</div></td>
+                <td>Skin Cleanser</td>
+            </tr>
+            <tr class="skin-health">
+                <td><img src="avocado.png" alt="Avocado" class="food-image"><div class="food-name">Avocado</div></td>
+                <td>Heart Health, Skin, Moisture Balance</td>
+            </tr>
+            <tr class="anti-aging">
+                <td><img src="yogurt.png" alt="Yogurt" class="food-image"><div class="food-name">Yogurt, Dark Chocolate, Nuts, Berries, Tomato, Avocado, Fish</div></td>
+                <td>Anti-Aging</td>
+            </tr>
+            <tr class="hydration">
+                <td><img src="cucumber.png" alt="Cucumber" class="food-image"><div class="food-name">Cucumbers</div></td>
+                <td>Hydration</td>
+            </tr>
+            <tr class="skin-health">
+                <td><img src="tomato.png" alt="Tomato" class="food-image"><div class="food-name">Tomato</div></td>
+                <td>Sun Protection, Skin</td>
+            </tr>
+            <tr class="cell-repair">
+                <td><img src="berries.png" alt="Berries" class="food-image"><div class="food-name">Berries</div></td>
+                <td>Cell Repair</td>
+            </tr>
+            <tr class="elasticity">
+                <td><img src="eggs.png" alt="Eggs" class="food-image"><div class="food-name">Eggs</div></td>
+                <td>Elasticity</td>
+            </tr>
+            <tr class="skin-health">
+                <td><img src="pineapple.png" alt="Pineapple" class="food-image"><div class="food-name">Pineapple</div></td>
+                <td>Better Skin, Digestion</td>
+            </tr>
+            <tr class="energy">
+                <td><img src="apple.png" alt="Apple" class="food-image"><div class="food-name">Apple</div></td>
+                <td>Heart, Energy</td>
+            </tr>
+            <tr class="digestion">
+                <td><img src="onion.png" alt="Onion" class="food-image"><div class="food-name">Onion</div></td>
+                <td>Digestion</td>
+            </tr>
+            <tr class="eyes">
+                <td><img src="carrot.png" alt="Carrot" class="food-image"><div class="food-name">Carrot</div></td>
+                <td>Eyes</td>
+            </tr>
+            <tr class="blood-sugar">
+                <td><img src="carrot-banana-honey.png" alt="Carrot + Banana + Honey" class="food-image"><div class="food-name">Carrot + Banana + Honey</div></td>
+                <td>Stable Blood Sugar / Stops Craving</td>
+            </tr>
+            <tr class="immune-system">
+                <td><img src="orange.png" alt="Orange" class="food-image"><div class="food-name">Orange</div></td>
+                <td>Immune System</td>
+            </tr>
+            <tr class="energy">
+                <td><img src="banana.png" alt="Banana" class="food-image"><div class="food-name">Banana</div></td>
+                <td>Energy</td>
+            </tr>
+            <tr class="digestion">
+                <td><img src="mango.png" alt="Mango" class="food-image"><div class="food-name">Mango</div></td>
+                <td>Digestion</td>
+            </tr>
+            <tr class="antioxidants">
+                <td><img src="pomegranate.png" alt="Pomegranate" class="food-image"><div class="food-name">Pomegranate</div></td>
+                <td>Antioxidants, Testosterone</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <div class="food-combinations">
+        <div class="combination-title">Foods Eaten Together</div>
+        <ul class="food-combination-list">
+            <li><img src="Yogurt & Almonds.jpg" alt="Yogurt & Almonds" class="food-image"><div class="food-name">Yogurt & Almonds</div></li>
+            <li><img src="Apple + Dark Chocolate.jpg" alt="Apple + Dark Chocolate" class="food-image"><div class="food-name">Apple + Dark Chocolate</div></li>
+        </ul>
+    </div>
+
+    <div class="food-combinations">
+        <div class="combination-title">Best Times</div>
+        <ul class="food-combination-list">
+            <li><img src="Fruits, Egg, Yogurt, Avocado - Morning.jpg" alt="Fruits, Egg, Yogurt, Avocado - Morning" class="food-image"><div class="food-name">Fruits, Egg, Yogurt, Avocado - Morning</div></li>
+            <li><img src="Meat, Carbs, Fish - Afternoon.jpg" alt="Meat, Carbs, Fish - Afternoon" class="food-image"><div class="food-name">Meat, Carbs, Fish - Afternoon</div></li>
+            <li><img src="Milk, Kiwi, Banana, Honey, Nuts - Evening.jpg" alt="Milk, Kiwi, Banana, Honey, Nuts - Evening" class="food-image"><div class="food-name">Milk, Kiwi, Banana, Honey, Nuts - Evening</div></li>
+        </ul>
+    </div>
+
+</body>
+</html>
